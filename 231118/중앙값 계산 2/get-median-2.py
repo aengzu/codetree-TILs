@@ -7,4 +7,6 @@ for i in range(len(arr)):
     #홀수일때
     if i%2==0:
         idx = int(i/2)
-        print(arr[idx], end=" ")
+        arr2 = arr[:i+1]
+        arr2.sort()
+        print(arr2[idx], end=" ")
