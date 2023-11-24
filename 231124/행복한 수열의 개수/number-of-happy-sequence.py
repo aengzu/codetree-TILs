@@ -24,7 +24,7 @@ for i in range(n):
             break
 
 for j in range(n):
-    cnt = [1,1,1]
+    cnt = [1]*n
     #행
     for i in range(n-1):
         
