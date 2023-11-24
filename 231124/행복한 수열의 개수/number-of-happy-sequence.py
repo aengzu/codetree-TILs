@@ -11,7 +11,7 @@ cnt = [
 ]
 
 for i in range(n):
-    cnt = [1,1,1]
+    cnt = [1] * n
     #행
     for j in range(n-1):
         
