@@ -4,6 +4,7 @@ class Bomb:
         self.color = color
         self.sec = sec
 
-bomb1 = Bomb("branch","G",34)
-
+code, color, sec = list(input().split())
+sec = int(sec)
+bomb1 = Bomb(code, color, sec)
 print(f"code : {bomb1.code}\ncolor : {bomb1.color}\nsecond : {bomb1.sec}")
