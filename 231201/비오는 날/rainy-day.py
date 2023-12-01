@@ -1,4 +1,5 @@
 import datetime
+# compare 함수 따로 정의하지 않아도 date 사이의 대소관계 < , > , = 로 비교가능하다 !
 class Weather:
     def __init__(self, date, weekday, weather):
         self.date = date
@@ -35,14 +36,19 @@ for _ in range(n):
     Weather_DB.append(Weather(date, weekday, weather))
 
 Rain_DB = []
+ans = Weather("9999-99-99", "", "")
 for weat in Weather_DB:
     if weat.weather == 'Rain':
         Rain_DB.append(weat)
+        if ans.date >= weat.date:
+            ans = weat
 
-min_d = Rain_DB[0]
+#min_d = Rain_DB[0]
 
-for i in range(len(Rain_DB)):
-    min_d = compare(min_d, Rain_DB[i])
+#for i in range(len(Rain_DB)):
+#    min_d = compare(min_d, Rain_DB[i])
 
 
-print(f"{min_d.date} {min_d.weekday} {min_d.weather}")
+#print(f"{min_d.date} {min_d.weekday} {min_d.weather}")
+
+print(ans.date, ans.weekday, ans.weather)
