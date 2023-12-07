@@ -9,5 +9,4 @@ def print_arr(arr):
         else:
             print(elem, end=' ')
 
-
 print_arr(arr)
