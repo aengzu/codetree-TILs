@@ -8,3 +8,6 @@ def print_arr(arr):
             print(elem, end=' ')
         else:
             print(elem, end=' ')
+
+
+print_arr(arr)
