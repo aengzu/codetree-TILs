@@ -1,9 +1,8 @@
 _str = input()
 
-
 def is_pelindrome(_str):
-    for i in range(len(str)):
-        if str[i] != str[len(s)-i-1]:
+    for i in range(len(_str)):
+        if _str[i] != _str[len(_str)-i-1]:
             return False
 
     return True
