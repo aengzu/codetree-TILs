@@ -1,6 +1,7 @@
 n = int(input())
-
-arr = [int(input()) for _ in range(n)]
+arr = []
+for _ in range(n):
+    arr.append(int(input()))
 
 def print_arr(arr):
     for  elem in arr:
