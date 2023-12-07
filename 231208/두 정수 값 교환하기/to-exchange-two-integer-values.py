@@ -1,0 +1,5 @@
+n, m = tuple(map(int, input().split()))
+
+def swap(n, m):
+    n, m = m, n
+    print(n, m)
