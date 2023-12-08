@@ -1,4 +1,4 @@
-a, b = tuple(map(int, input().split())
+a, b = tuple(map(int, input().split()))
 
 def modify_num(a, b):
     if a<b:
