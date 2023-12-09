@@ -14,7 +14,7 @@ def is_substr():
         if pattern[0] == text[i]:
             #패턴의 길이만큼 살펴봐야함
             for j in range(m):
-                if i+j > n-1:
+                if i+j >= n-1:
                     break
                 if pattern[j] != text[i+j]:
                     flag = False
