@@ -14,7 +14,7 @@ def is_partition():
                 if a[i+j] != b[j]:
                     break
             return True
-        return False
+    return False
 
 
 
