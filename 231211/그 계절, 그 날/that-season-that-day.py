@@ -21,6 +21,9 @@ def exist_date(y, m, d):
     if yunnyeon(y):
         if m==2 and d>30:
             return '-1'
+    else:
+        if m==2 and d>29:
+            return '-1'
     
     if 3 <= m and m <=5:
         return 'Spring'
