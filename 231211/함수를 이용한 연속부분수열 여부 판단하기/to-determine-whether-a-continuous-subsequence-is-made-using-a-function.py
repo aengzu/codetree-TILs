@@ -12,7 +12,7 @@ def is_partition():
         if a[i] == b[0]:
             for j in range(lb):
                 if a[i+j] != b[j]:
-                    return False
+                    break
             return True
         return False
 
