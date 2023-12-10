@@ -8,12 +8,16 @@ def is_partition():
     if la < lb :
         return False
     for i in range(la):
+        flag = False
         #만약 b의 첫번쨰 원소와 같다면
         if a[i] == b[0]:
+            flag = True
             for j in range(lb):
                 if a[i+j] != b[j]:
+                    flag = False
                     break
-            return True
+            if flag:
+                return True
     return False
 
 
