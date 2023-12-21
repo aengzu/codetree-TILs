@@ -4,10 +4,11 @@
 
 n = int(input())
 
-line = [0] * 101
+line = [0] * 201
 
 for _ in range(n):
     x1 , x2 = tuple(map(int, input().split()))
+    x1, x2 = x1+100, x2+100
     for i in range(x1, x2):
         line[i] += 1
 
