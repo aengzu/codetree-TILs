@@ -31,4 +31,8 @@ for i in range(MAX_R+1):
             max_x = max(i, max_x)
             max_y = max(j, max_y)
 
-print((max_x-min_x+1)*(max_y-min_y+1))
+
+if min_x==MAX_R:
+    print(0)
+else:
+    print((max_x-min_x+1)*(max_y-min_y+1))
