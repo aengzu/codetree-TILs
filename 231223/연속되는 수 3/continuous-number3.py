@@ -6,7 +6,7 @@ arr = [ int(input())
         for _ in range(n)]
 
 cnt = 1
-ans = 0
+ans = 1
 for i in range(1, len(arr)):
     # 부호 같을 때
     if arr[i] * arr[i-1] > 0:
