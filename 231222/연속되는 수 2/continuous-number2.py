@@ -8,9 +8,11 @@ for _ in range(n):
     arr.append(int(input()))
 
 cnt = 1
-c=1
+c = 1
 for i in range(1, len(arr)):
     if arr[i] == arr[i-1]:
         c += 1
+    else:
+        c = 1
     cnt = max(cnt,c)
 print(cnt)
