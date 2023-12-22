@@ -22,7 +22,11 @@ for i, (x1,y1,x2,y2) in enumerate(rect, start=1):
     x2, y2 = x2+OFFSET, y2+OFFSET
     for x in range(x1, x2):
         for y in range(y1, y2):
-            area[x][y] = i
+            if i%2==0:
+                c = 2
+            else:
+                c=1
+            area[x][y] = c
 
 
 cnt = 0
@@ -30,5 +34,6 @@ for i in range(MAX_R+1):
     for j in range(MAX_R+1):
         if area[i][j] == 2:
             cnt += 1
+
 
 print(cnt)
