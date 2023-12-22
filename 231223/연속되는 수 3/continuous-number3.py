@@ -5,6 +5,7 @@ n = int(input())
 arr = [ int(input()) 
         for _ in range(n)]
 
+cnt = 1
 ans = 0
 for i in range(1, len(arr)):
     # 부호 같을 때
