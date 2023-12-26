@@ -31,7 +31,7 @@ for i in range(m):
         b_idx += 1
 
 # 둘이 만나는 시간을 구한다
-ans = 0
+ans = -1
 for i in range(1, a_idx):
     if A[i] == B[i]:
         ans = i
