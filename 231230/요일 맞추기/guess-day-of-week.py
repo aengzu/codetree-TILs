@@ -9,7 +9,7 @@ def calculate_date(m1, d1):
         elif i==2:
             sum += 28
         else:
-            sum += 30
+            sum += 31
         
     sum += d1
     return sum
