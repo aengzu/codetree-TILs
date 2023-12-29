@@ -1,7 +1,7 @@
 m1, d1, m2, d2 = tuple(map(int, input().split()))
 A = input()
 
-days_of_weak = ["Mon", "Tue","Wed", "Thu", "Fri", "Sat", "Sum"]
+days_of_weak = ["Mon", "Tue","Wed", "Thu", "Fri", "Sat", "Sun"]
 days_in_month = [0,31,29,31,30,31,30,31,31,30,31,30,31]
 
 def calculate_days(m1, d1):
@@ -14,7 +14,7 @@ def calculate_days(m1, d1):
 diff = calculate_days(m2, d2) - calculate_days(m1, d1)
 
 rem = diff%7
-cals = diff//7 - 1
+cals = diff//7
 
 x = days_of_weak.index(A)
 
