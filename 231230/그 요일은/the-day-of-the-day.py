@@ -14,9 +14,11 @@ def calculate_days(m1, d1):
 diff = calculate_days(m2, d2) - calculate_days(m1, d1)
 
 rem = diff%7
-cals = diff//7
+cals = diff//7 - 1
 
-if days_of_weak[rem]=='A':
+x = days_of_weak.index(A)
+
+if rem < int(x):
     cals += 1
 
 print(cals)
