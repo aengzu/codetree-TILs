@@ -14,9 +14,9 @@ def calculate_date(m, d):
 
 
 def how_many_day(d, w):
-    ans = 1
+    ans = 0
     ans += d//7
-    for i in range(d%7):
+    for i in range(1, d%7+1):
         if day[i] == w:
             ans += 1
     return ans
