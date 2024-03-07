@@ -12,6 +12,6 @@ def is_intersecting(a,b,c,d):
 
 
 if(is_intersecting(a,b,c,d)):
-    print(max(d-a, b-c))
+    print(max(b,d)-min(a,c))
 else:
     print(b-a+d-c)
