@@ -11,4 +11,4 @@ def is_intersecting(x1, x2, x3, x4):
 if(is_intersecting(x1,x2,x3,x4)):
     print("intersecting")
 else:
-    print("nointersecting")
+    print("nonintersecting")
