@@ -5,8 +5,11 @@ def is_intersecting(x1, x2, x3, x4):
         return True
     elif x3<x1 and x1<=x4:
         return True
+    elif x1==x3:
+        return True
     else:
         return False
+    
 
 if(is_intersecting(x1,x2,x3,x4)):
     print("intersecting")
