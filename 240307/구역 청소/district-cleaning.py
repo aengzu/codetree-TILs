@@ -11,7 +11,7 @@ def is_intersecting(a,b,c,d):
     return True
 
 
-if(is_intersecting):
+if(is_intersecting(a,b,c,d)):
     print(max(d-a, b-c))
 else:
     print(b-a+d-c)
