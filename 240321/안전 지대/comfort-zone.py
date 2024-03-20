@@ -56,7 +56,7 @@ def get_zone_num(k):
 
 
 max_zone_num = -1
-anwer_k = 0
+answer_k = 0
 max_height = 100
 
 for k in range(1, max_height+1):
