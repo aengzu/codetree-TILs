@@ -22,7 +22,7 @@ def in_range(x,y):
 
 def can_go(x,y):
     # 범위 내에 있고, 방문 경험 없고, 0인 곳들만 갈 수 있다.
-    return in_range(x,y) and not visited[x][y] and grid[x][y]==0
+    return in_range(x,y) and not visited[x][y] and not grid[x][y]
 
 cnt = 0
 def bfs():
@@ -32,7 +32,7 @@ def bfs():
     dxs, dys = [0,1,0,-1],[1,0,-1,0]
     # 큐가 비어있지않다면 계속하기
     # 데큐는 size() 가 아니라 len() 으로 해야함.
-    while len(bfs_q)>0:
+    while bfs_q:
         x,y = bfs_q.popleft()
         for dx, dy in zip(dxs, dys):
             new_x, new_y = x+dx, y+dy
@@ -46,7 +46,21 @@ def bfs():
 
 for _ in range(k):
     x, y = start_pts[_]
-    bfs_q.append((x,y))
-    bfs()
+    bfs_q.append((x-1,y-1))
+    visited[x-1][y-1]  = True
+    
+
+bfs()
 
 print(cnt)
+
+ans = sum([
+    1
+    for i in range(n)
+    for j in range(n)
+    if visited[i][j]
+])
+  
+    
+
+print(ans)
