@@ -52,7 +52,7 @@ for _ in range(k):
 
 bfs()
 
-print(cnt)
+
 
 ans = sum([
     1
