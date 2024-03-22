@@ -18,7 +18,7 @@ dp = [0] * 1001
 dp[0], dp[1] = 0,0
 dp[2], dp[3] = 1,1
 
-for i in range(n):
+for i in range(2, n):
     dp[i] = dp[i-2] + dp[i-3] + 2
 
 print(dp[n])
