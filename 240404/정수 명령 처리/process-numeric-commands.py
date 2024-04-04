@@ -6,7 +6,7 @@ class Stack:
         self.items.append(item)
     
     def empty(self):
-        if self.size==0:
+        if self.size()==0:
             return 1
         else:
             return 0
@@ -17,13 +17,11 @@ class Stack:
     def pop(self):
         if self.empty():
             raise Exception("Stack is empty")
-
         return self.items.pop()
 
     def top(self):
         if self.empty():
             raise Exception("Stack is empty")
-
         return self.items[-1]
 
 
