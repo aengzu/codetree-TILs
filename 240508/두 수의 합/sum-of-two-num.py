@@ -7,7 +7,7 @@ arr = list(map(int, input().split()))
 ans = 0
 
 for elem in arr:
-    dff = k - elem
+    diff = k - elem
     if diff in nums:
         ans += nums[diff]
     if elem in nums:
