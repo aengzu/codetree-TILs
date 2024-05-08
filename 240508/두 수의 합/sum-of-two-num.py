@@ -9,7 +9,7 @@ ans = 0
 for elem in arr:
     dff = k - elem
     if diff in nums:
-        asn += nums[diff]
+        ans += nums[diff]
     if elem in nums:
         nums[elem] += 1
     else:
