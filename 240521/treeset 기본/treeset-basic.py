@@ -22,9 +22,17 @@ for i in range(n):
     elif cmds[0] == 'remove':
         s.remove(int(cmds[1]))
     elif cmds[0] == 'lower_bound':
-        print(s.bisect_left(int(cmds[1])))
+        idx = s.bisect_left(int(cmds[1]))
+        if idx < len(s):
+            print(s[idx])
+        else:
+            print("None")
     elif cmds[0] == 'upper bound':
-        print(s.bisect_right(int(cmds[1])))
+        idx = (s.bisect_right(int(cmds[1])))
+        if idx > len(s):
+            print(s[idx])
+        else:
+            print("None")
     else:
         if int(cmds[1]) in s:
             print("true")
