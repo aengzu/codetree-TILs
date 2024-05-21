@@ -27,9 +27,9 @@ for i in range(n):
             print(s[idx])
         else:
             print("None")
-    elif cmds[0] == 'upper bound':
+    elif cmds[0] == 'upper_bound':
         idx = (s.bisect_right(int(cmds[1])))
-        if idx > len(s):
+        if idx < len(s):
             print(s[idx])
         else:
             print("None")
