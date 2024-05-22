@@ -38,7 +38,7 @@ for i in range(n):
         q.push(option)
     elif c=='size':
         print(q.size())
-    elif c=='empty':
-        print(q.empty())
+    elif c == "empty":
+        print(1 if q.empty() else 0)
     elif c=='pop':
         print(q.pop())
