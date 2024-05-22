@@ -42,3 +42,5 @@ for i in range(n):
         print(1 if q.empty() else 0)
     elif c=='pop':
         print(q.pop())
+    else:
+        print(q.top())
