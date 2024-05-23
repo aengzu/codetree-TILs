@@ -39,7 +39,7 @@ for i in range(n):
     elif c=='size':
         print(q.size())
     elif c == "empty":
-        print(1 if q.empty() else 0)
+        print(q.empty())
     elif c=='pop':
         print(q.pop())
     else:
