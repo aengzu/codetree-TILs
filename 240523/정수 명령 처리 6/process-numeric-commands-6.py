@@ -13,10 +13,7 @@ class PriorityQueue:
         heapq.heappush(self.items, -item)
     
     def empty(self):
-        if self.items is []:
-            return 1
-        else:
-            return 0
+        return not self.items
     
     def size(self):
         return len(self.items)
@@ -39,7 +36,7 @@ for i in range(n):
     elif c=='size':
         print(q.size())
     elif c == "empty":
-        print(q.empty())
+        print(1 if q.empty() else 0)
     elif c=='pop':
         print(q.pop())
     else:
