@@ -15,7 +15,7 @@ for _ in range(n):
     elif c_dir == 'W':
         # 서쪽이면 1번
         move_dir = 1
-    elif c_dir == 'N':
+    elif c_dir == 'S':
         move_dir = 2
     else:
         move_dir = 3
