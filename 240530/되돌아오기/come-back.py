@@ -28,7 +28,7 @@ for _ in range(n):
     c_dir, dist = tuple(input().split())
     dist = int(dist)
 
-    if c_idr == 'E':
+    if c_dir == 'E':
         move_dir =0
     elif c_dir =='W':
         move_dir = 1
