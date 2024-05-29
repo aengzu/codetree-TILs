@@ -23,6 +23,7 @@ for _ in range(n):
             if check(x,y):
                 c_flg = True
                 print(time)
+                break
     elif dir=='S':
         for i in range(c):
             time += 1
@@ -30,6 +31,7 @@ for _ in range(n):
             if check(x,y):
                 c_flg = True
                 print(time)
+                break
     elif dir=='E':
         for i in range(c):
             time += 1
@@ -37,6 +39,7 @@ for _ in range(n):
             if check(x,y):
                 c_flg = True
                 print(time)
+                break
     else:
         for i in range(c):
             time += 1
@@ -44,6 +47,7 @@ for _ in range(n):
             if check(x,y):
                 c_flg = True
                 print(time)
+                break
 
 
 if(c_flg==False):
