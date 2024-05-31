@@ -10,12 +10,12 @@ arr = list(map(int, input().split()))
 arr_sum = arr[0]
 
 for i in range(1, n):
-    if sum_of_nums < 0:
-        sum_of_nums = arr[i]
+    if arr_sum < 0:
+        arr_sum = arr[i]
     
     else:
-        sum_of_nums += arr[i]
+        arr_sum += arr[i]
     
-    ans = max(ans, sum_of_nums)
+    ans = max(ans, arr_sum)
 
 print(ans)
