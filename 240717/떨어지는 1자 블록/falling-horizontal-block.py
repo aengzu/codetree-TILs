@@ -17,12 +17,12 @@ def is_empty(idx, k, m):
 now_idx = 0
 for i in range(n):
     if is_empty(i, k, m):
-        now_idx += 1
+        now_idx = i
     else:
-        for j in range(k, k+m):
-            grid[i-1][j] = 1
         break
 
+for j in range(k, k + m):
+    grid[now_idx][j] = 1
 
 for i in range(n):
     for j in range(n):
