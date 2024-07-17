@@ -20,9 +20,9 @@ def can_go(x, y):
                 max_value = arr[ny][nx]
     return x, y
 
-new_marbles = set()
 
 for now_t in range(t):
+    new_marbles = set()
     for marble in marbles:
         x, y = marble[0], marble[1]
         new_position = can_go(x - 1, y - 1)
