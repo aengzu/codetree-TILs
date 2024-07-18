@@ -12,6 +12,7 @@ def check_in_arr(arr, m):
         for k in range(i, i+m):
             if first_num != arr[k]:
                 is_happy = False
+                break
     return is_happy
 
 
