@@ -6,14 +6,16 @@ arr = [list(map(int, input().split())) for _ in range(n)]
 
 # 배열을 체크
 def check_in_arr(arr, m):
-    for i in range(0, n-m+1):
+    for i in range(0, len(arr) - m + 1):
         is_happy = True
         first_num = arr[i]
-        for k in range(i, i+m):
+        for k in range(i, i + m):
             if first_num != arr[k]:
                 is_happy = False
                 break
-    return is_happy
+        if is_happy:
+            return True
+    return False
 
 
 result = 0
