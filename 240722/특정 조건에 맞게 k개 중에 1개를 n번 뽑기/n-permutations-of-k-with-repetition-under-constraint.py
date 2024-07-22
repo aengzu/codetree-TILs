@@ -11,7 +11,7 @@ def make_p(cnt):
 
 
     for i in range(1, k+1):
-        if arr.count(i) >= 2:
+        if len(arr) >= 2 and arr[-1] == arr[-2] == i:
             continue
         arr.append(i)
         make_p(cnt+1)
