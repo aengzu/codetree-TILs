@@ -2,7 +2,7 @@ k, n = tuple(map(int, input().split()))
 arr = []
 
 def make_p(cnt):
-    if cnt >= 3:
+    if cnt > 3:
         if arr[-1]==arr[-2] and arr[-2]==arr[-3]:
             return 
 
