@@ -3,7 +3,7 @@ n,m = tuple(map(int, input().split()))
 arr = [list(map(int, input().split())) for _ in range(n)]
 
 visited = [[0]*m for _ in range(n)]
-drs, dcs = [0,1,0,-1], [1, 0,-1,0]
+drs, dcs = [0,1], [1, 0]
 
 
 def in_range(r,c):
@@ -13,9 +13,9 @@ def dfs(r, c):
     if visited[r][c]==1:
         return
     visited[r][c] = 1
-    for i in range(4):
+    for i in range(2):
         new_r, new_c = r + drs[i], c + dcs[i]
-        if in_range(new_r,new_c) and arr[new_r][new_c] == 0:
+        if in_range(new_r,new_c) and arr[new_r][new_c] == 1:
             dfs(new_r, new_c)
 
 dfs(0,0)
