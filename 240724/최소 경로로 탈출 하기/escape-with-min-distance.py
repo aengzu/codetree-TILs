@@ -39,7 +39,7 @@ def bfs():
 push(0, 0, 0)
 bfs()
 
-if visited[n-1][m-1] = 1:
+if visited[n-1][m-1] == 1:
     print(step[n-1][m-1])
 else:
     print(-1)
