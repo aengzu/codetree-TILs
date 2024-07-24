@@ -3,11 +3,11 @@ n,m = tuple(map(int, input().split()))
 arr = [list(map(int, input().split())) for _ in range(n)]
 
 visited = [[0]*m for _ in range(n)]
-drs, dcs = [0,1], [1, 0]
+drs, dcs = [1,0], [0, 1]
 
 
 def in_range(r,c):
-    return 0<=r<n and 0<=c<n
+    return 0<=r<n and 0<=c<m
 
 def dfs(r, c):
     if visited[r][c]==1:
