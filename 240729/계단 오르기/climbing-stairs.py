@@ -18,7 +18,8 @@ memo = [0] * (MAX_N + 1)
 memo[2], memo[3], memo[4] = 1, 1, 1
 
 for i in range(5, n+1):
-    memo[i] = memo[i-2] + memo[n-3]
+    memo[i] = memo[i-2] + memo[i-3]
+    print(memo[i])
 
 
 print(memo[n])
