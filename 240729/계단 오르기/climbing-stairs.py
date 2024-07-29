@@ -21,4 +21,4 @@ for i in range(5, n+1):
     memo[i] = memo[i-2] + memo[i-3]
 
 
-print(memo[n])
+print(memo[n]%10007)
