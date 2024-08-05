@@ -11,10 +11,11 @@ for i in range(1, n):
     min_arr[0][i] = min(min_arr[0][i-1], arr[0][i])
     min_arr[i][0] = min(min_arr[i-1][0], arr[i][0])
 
+
 # 내부값 세팅
 for i in range(1, n):
     for j in range(1, n):
-        min_arr[i][j] = min(min_arr[i-1][j], min_arr[i][j-1], arr[i][j])
+        min_arr[i][j] = min(max(min_arr[i-1][j], min_arr[i][j-1]), arr[i][j])
 
 
-print(max(min_arr[n-2][n-2], min_arr[n-2][n-1], min_arr[n-1][n-2]))
+print(min_arr[n-1][n-1])
